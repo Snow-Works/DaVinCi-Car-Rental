@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+
+img, 
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    outline: none;
+
+}
+
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: pointer;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+

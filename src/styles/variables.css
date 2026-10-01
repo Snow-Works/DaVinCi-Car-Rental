@@ -1,0 +1,66 @@
+:root {
+    /* COLOR ASSEMBLY  */
+    --color-primary: #1572D3;
+    --color-primary-hover: #105CB0;
+    --color-primary-light: #E8F1FB;
+
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-text-muted: #484848;
+    --color-text: #242424;
+    --color-border: #ACACAC;
+    --color-bg-light: #F5F5F5;
+
+
+
+    /* TYPOGRAPHY */
+--font-family: 'inter', system-ui, -apple-system, sans-serif;
+
+--font-size-h1: 60px;
+--font-size-h2: 40px;
+--font-size-h3: 24px;
+--font-size-body: 16px;
+--font-size-small: 14px;
+
+
+--font-weight-regular: 400;
+--font-weight-medium: 500;
+--font-weight-semibold: 600;
+--font-weight-bold: 700;
+
+
+
+/* SPACING */
+
+--space-xs: 8px;
+--space-sm: 12px;
+--space-md: 16px;
+--space-lg: 24px;
+--space-xl: 40px;
+--space-2xl: 80px;
+--space-3xl: 120px;
+
+
+
+/* RADIUS BEING USED */
+
+--radius-sm: 8px;
+--radius-md: 12px;
+--radius-lg: 16px;
+--radius-full: 9999px;
+
+
+/* SHADOWS */
+
+--shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+--shadow-md: 0 4px 20px rgba(0, 0, 0.08);
+
+
+
+
+
+/* LAYOUT */
+
+--container-width: 1120px;
+
+}

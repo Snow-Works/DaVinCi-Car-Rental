@@ -1,0 +1,26 @@
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-text);
+    background-color:var(--color-white);
+
+}
+
+
+h1 {
+    font-size: var(--font-size-h1);
+    font-weight:  var(--font-weight-bold);
+
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-bold);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-semibold);
+}
+
