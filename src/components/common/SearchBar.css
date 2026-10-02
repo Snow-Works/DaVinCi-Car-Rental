@@ -1,0 +1,81 @@
+/* OUTER CARDS */
+
+.search-bar {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    background-color: var(--color-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    padding: var(--space-12) var(--space-12) var(--space-12) var(--space-32);
+    display: flex;
+    align-items: center;
+    gap: var(--space-24);
+}
+
+
+/* A single field (icon + stacked label/value) */
+.search-bar__field {
+    display: flex;
+    align-items: center;
+    gap: var(--space-16);
+    flex: 1;
+}
+
+.search-bar__field-icon {
+    width: var(--space-24);
+    height: var(--space-24);
+    flex-shrink: 0;
+}
+
+/* column layout: label on top, value underneath */
+.search-bar__field-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.search-bar__field-label {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text);
+    line-height: 1;
+}
+
+.search-bar__field-value {
+    font-size: var(--font-size-small);
+    color: var(--color-text-light);
+    line-height: 1;
+}
+
+
+
+
+/* Thin vertical line between fields */
+.search-bar__divider {
+    width: 1px;
+    height: var(--space-40);
+    background-color: var(--color-border);
+    flex-shrink: 0;
+}
+
+/* Search button — same style as the header's Sign up */
+.search-bar__button {
+    font-size: var(--fs-small);
+    font-weight: var(--fw-semibold);
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    padding: var(--space-12) var(--space-32);
+    border-radius: var(--radius-sm);
+    flex-shrink: 0;
+    transition:
+        background-color var(--transition-fast),
+        transform var(--transition-fast),
+        box-shadow var(--transition-fast);
+}
+
+.search-bar__button:hover {
+    background-color: var(--color-primary-hover);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+}
+
