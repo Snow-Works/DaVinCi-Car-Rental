@@ -1,5 +1,5 @@
 import locationIcon from '../../assets/location.svg'
-import calenderIcon from '../../assets/calender.svg'
+import calendarIcon from '../../assets/calendar.svg'
 import './SearchBar.css'
 
 
@@ -24,7 +24,7 @@ function SearchBar() {
 
             {/* pick up date section */}
             <div className="search-bar__field">
-                <img src={calenderIcon} alt="Calender" className="search-bar__field-icon" />
+                <img src={calendarIcon} alt="Calender" className="search-bar__field-icon" />
 
                 <div className="search-bar__field-body">
                     <span className="search-bar__field-label">Pickup date</span>
@@ -36,7 +36,7 @@ function SearchBar() {
 
             {/* Return date section */}
             <div className="search-bar__field">
-                <img src={calenderIcon} alt="calender" className="search-bar__field-icon" />
+                <img src={calendarIcon} alt="calender" className="search-bar__field-icon" />
                 <div className="search-bar__field-body">
                     <span className="search-bar__field-label">Return date</span>
                     <span className="search-bar__field-value">Thu 16 Feb, 11:00 AM</span>
@@ -50,3 +50,5 @@ function SearchBar() {
     )
 
 }
+
+export default SearchBar

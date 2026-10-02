@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import logo from '../../assets/brand-logo.svg'
+import blob from '../../assets/hero-blob.png'
 import './Header.css'
 
 
@@ -32,6 +33,10 @@ function Header() {
     return(
         //building the header section
 
+        
+
+
+
         <header className={`header ${scrolled ? 'header--scrolled' : ''}`}>
 
             {/* floating white card - 1120px, centered */}
@@ -45,11 +50,14 @@ function Header() {
                 </a>
 
 
+                
+
+
                 {/* Navigation Links */}
                 <nav className="header__nav" aria-label="Primary">
                     <a href="#" className="header__nav-link">Become a renter</a>
                     <a href="#" className="header__nav-link">Rental deals</a> 
-                    <a href="#" className="header__nav-link">How deals</a> 
+                    <a href="#" className="header__nav-link">How it works</a> 
                     <a href="#" className="header__nav-link">Why choose us</a>  
                 </nav>
 
@@ -59,7 +67,12 @@ function Header() {
                     <a href="#" className="header__signup">Sign up</a> 
                 </div>
             </div>
+
+            
         </header>
+
+
+
     )
     
 }

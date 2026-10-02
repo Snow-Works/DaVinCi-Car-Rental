@@ -1,11 +1,17 @@
 import Header from './components/layout/Header'
+import Hero from './components/hero/Hero.jsx'
+import blob from './assets/hero-blob.png'
+
 
 function App() {
   return (
     <div className="app">
+      
       <Header />
       <main className="app__main">
-        <h1>Hello, DaVinCi Car Rental</h1>
+        <Hero />
+
+        {/* Next section (how it works, why choose us, etc.) */}
       </main>
     </div>
   )

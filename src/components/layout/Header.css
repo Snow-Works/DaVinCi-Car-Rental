@@ -1,7 +1,6 @@
 .header {
     position: sticky;
     top: 0;
-    z-index: 100;
     padding: 40px 40px;
     transition:L padding 0.3s ease;
 }
