@@ -1,0 +1,120 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 40px 40px;
+    transition:L padding 0.3s ease;
+}
+
+
+/* modified in header.jsx when scrolled > 20px */
+.header--scrolled {
+    padding: 16px 40px;
+}
+
+
+/* floating white card*/
+.header__inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    background-color: var(--color-white);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    padding: 12px 12px 12px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    transition: box-shadow 0.3s ease;
+}
+
+
+/* deeper shadow when scrolled, to reinforce the lift */
+.header--scrolled .header__inner {
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.10);
+}
+
+
+/* logo section */
+.header__logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 8px;
+
+}
+
+.header__logo-text {
+  font-size: 18px;            
+  font-weight: 700;         
+  color: #0B0B0B;             
+  letter-spacing: 0.5px;     
+  text-transform: uppercase;
+}
+
+.header__logo img {
+    height: 28px;
+    width: auto;
+}
+
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex: 1;
+    justify-content: center;
+}
+
+.header__nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: #242424;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+}
+
+.header__nav-link:hover {
+    color: var(--color-primary);
+}
+
+/* Action buttons (signin/ signup) button section */
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
+}
+
+/* signin in (plain text) */
+.header__signin {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    transition: color 0.2s ease;
+}
+
+.header__signin:hover {
+    color: var(--color-primary);
+}
+
+/* sign up button */
+.header__signup {
+    font-size: 14px;
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition:
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.header__signup:hover {
+    background-color: var(--color-primary-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(21, 114, 211, 0.25);
+}

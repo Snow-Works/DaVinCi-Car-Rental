@@ -1,7 +1,12 @@
+import Header from './components/layout/Header'
+
 function App() {
   return (
     <div className="app">
-      <h1>Hello, DaVinCi Car Rental</h1>
+      <Header />
+      <main className="app__main">
+        <h1>Hello, DaVinCi Car Rental</h1>
+      </main>
     </div>
   )
 }

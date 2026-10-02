@@ -63,4 +63,14 @@
 
 --container-width: 1120px;
 
+
+/* SPACING (EXTENDED) */
+--space-160: 160px;
+--space-200: 200px;
+--space-240: 240px;
+
+
+/* HERO SECTION */
+--hero-min-height: 800px;
+--hero-content-top: 240px;
 }
