@@ -1,5 +1,4 @@
-/* StepCard.css — one step card in the How it work section */
-
+/*  Card  */
 .step-card {
     display: flex;
     flex-direction: column;
@@ -7,10 +6,24 @@
     gap: var(--space-40);
     text-align: center;
     width: 192px;
-    transition: transform 0.25s ease;
+
+    /* INITIAL STATE: hidden and pushed down 30px.
+     The `--visible` modifier reverses this. */
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity var(--transition-slow),
+        transform var(--transition-slow);
 }
 
-/* Rounded pale-blue square with the icon centered inside */
+/* VISIBLE STATE: when the parent sees the row scroll into view,
+   it adds this class and the card fades + slides into place. */
+.step-card--visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*  Icon tile  */
 .step-card__icon-tile {
     width: var(--icon-tile-size);
     height: var(--icon-tile-size);
@@ -25,19 +38,18 @@
         box-shadow 0.25s ease;
 }
 
-
 /* Hover: tile lifts with a soft blue shadow */
 .step-card:hover .step-card__icon-tile {
     transform: translateY(-4px);
     box-shadow: 0 10px 24px rgba(21, 114, 211, 0.18);
-    cursor: pointer;
 }
 
-/* The icon inside the tile */
+/*  Icon inside the tile */
 .step-card__icon {
     width: var(--space-40);
     height: var(--space-40);
     object-fit: contain;
+    transition: transform 0.25s ease;
 }
 
 /* Hover: icon scales subtly */
@@ -45,27 +57,27 @@
     transform: scale(1.05);
 }
 
-/* Text block */
+/*  Text block  */
 .step-card__body {
     display: flex;
     flex-direction: column;
     gap: var(--space-8);
 }
 
-/* Title — bold, dark, one line */
+/*  Title  */
 .step-card__title {
     font-size: var(--fs-md);
     font-weight: var(--fw-semibold);
     color: var(--color-text);
     line-height: 1.2;
     transition: color 0.2s ease;
-
 }
 
+.step-card:hover .step-card__title {
+    color: var(--color-primary);
+}
 
-
-
-/* Description — gray, wraps to 2 lines */
+/*  Description  */
 .step-card__description {
     font-size: var(--fs-small);
     font-weight: var(--fw-regular);
