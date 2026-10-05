@@ -105,4 +105,24 @@
     --fw-medium: var(--font-weight-medium);
     --fw-semibold: var(--font-weight-semibold);
     --fw-bold: var(--font-weight-bold);
+
+
+
+    /* SECTION  HOW IT WORK  */
+  
+  --space-96:          96px;
+  --radius-xl:         24px;
+  --icon-tile-size:    112px;
+  --fs-tiny:           12px;
+
+  /*  BRAND STRIP  */
+  --color-brand-logo:  #484848;
+  --brand-strip-gap:   96px;
 }
+
+
+
+
+
+
+  
