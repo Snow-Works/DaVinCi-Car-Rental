@@ -1,0 +1,74 @@
+/* StepCard.css — one step card in the How it work section */
+
+.step-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-40);
+    text-align: center;
+    width: 192px;
+    transition: transform 0.25s ease;
+}
+
+/* Rounded pale-blue square with the icon centered inside */
+.step-card__icon-tile {
+    width: var(--icon-tile-size);
+    height: var(--icon-tile-size);
+    background-color: var(--color-primary-light);
+    border-radius: var(--radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* Hover: tile lifts with a soft blue shadow */
+.step-card:hover .step-card__icon-tile {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(21, 114, 211, 0.18);
+    cursor: pointer;
+}
+
+/* The icon inside the tile */
+.step-card__icon {
+    width: var(--space-40);
+    height: var(--space-40);
+    object-fit: contain;
+}
+
+/* Hover: icon scales subtly */
+.step-card:hover .step-card__icon {
+    transform: scale(1.05);
+}
+
+/* Text block */
+.step-card__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+}
+
+/* Title — bold, dark, one line */
+.step-card__title {
+    font-size: var(--fs-md);
+    font-weight: var(--fw-semibold);
+    color: var(--color-text);
+    line-height: 1.2;
+    transition: color 0.2s ease;
+
+}
+
+
+
+
+/* Description — gray, wraps to 2 lines */
+.step-card__description {
+    font-size: var(--fs-small);
+    font-weight: var(--fw-regular);
+    color: var(--color-text-light);
+    line-height: 1.5;
+}

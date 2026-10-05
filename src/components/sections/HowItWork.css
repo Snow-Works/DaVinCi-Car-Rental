@@ -1,0 +1,37 @@
+/* HowItWork.css — "How it work" section, All values reference tokens from variables.css. */
+
+/* Section wrapper  */
+/* Full-bleed light-gray background. Content is centered inside. */
+.how-it-work {
+    background-color: var(--color-bg-light);
+    padding: var(--space-80) var(--space-40);
+}
+
+/*  Inner container  */
+.how-it-work__inner {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-80);
+}
+
+/* Heading */
+.how-it-work__heading {
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+    color: var(--color-text);
+    text-align: center;
+    line-height: 1.2;
+    max-width: 736px;
+}
+
+/*  Steps row  */
+/* Three cards in a horizontal row, gap 200 (Figma). */
+.how-it-work__steps {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-200);
+    /* Figma Frame 37: gap 80 */
+}

@@ -1,4 +1,4 @@
-import '.'
+import './StepCard.css'
 
 
 function StepCard ({ icon, title, description }) {
@@ -6,7 +6,7 @@ function StepCard ({ icon, title, description }) {
         <div className="step-card">
             {/* Icon title (rounded pale-blue square with the icon centered ) */}
 
-            <div className="step-card__icon-title">
+            <div className="step-card__icon-tile">
 
                 {/* alt=" we have title below already conveys the maaning " */}
 

@@ -1,16 +1,15 @@
-/* The small reuseable badge Every value references a token from  variable.css */
+/* Pill.css — small reusable badge */
 
 .pill {
-
-    background-color: var(--color-primary-light);
-    color: var(--color-primary);
-    font-size: var(--fs-tiny);
-    font-weight: var(--font-weight-semibold);
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    border-radius: var(--radius-sm);
-    padding: var(--space--8) var(--space-16);
-    display: inline-block;
-    white-space: nowrap;
-    line-height: 1;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  font-size: var(--fs-tiny);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-radius: var(--radius-sm);
+  padding: var(--space-8) var(--space-16);
+  display: inline-block;
+  white-space: nowrap;
+  line-height: 1;
 }
