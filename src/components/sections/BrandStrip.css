@@ -1,0 +1,41 @@
+/* BrandStrip.css — row of partner brand logos
+All values reference tokens from variables.css.  */
+
+/* Outer wrapper */
+/* Clips horizontally so the wider-than-viewport track doesn't
+   cause a horizontal scrollbar. */
+.brand-strip {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 8.5rem;
+}
+
+/*  Track  */
+/* The row of logos. Intentionally has no max-width — it's allowed
+   to be wider than the viewport so the edge logos clip. */
+.brand-strip__track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--brand-strip-gap);   /* 96px */
+}
+
+/*  Individual logo  */
+.brand-strip__logo {
+  height: var(--brand-logo-height);   /* 40px */
+  width: auto;
+  flex-shrink: 0;
+  /* Logos are shown at slightly reduced opacity to feel secondary,
+     matching the muted look in Figma. */
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity   var(--transition-slow),
+    transform var(--transition-slow);
+}
+
+/* Visible state: fades in and slides up when the track enters view */
+.brand-strip__logo--visible {
+  opacity: 0.85;
+  transform: translateY(0);
+}

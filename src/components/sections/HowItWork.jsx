@@ -16,6 +16,7 @@ import iconCalendar from '../../assets/calendar.svg'
 import iconCar from '../../assets/icon-car.svg'
 
 import './HowItWork.css'
+import BrandStrip from './BrandStrip'
 
 
 function HowItWork() {
@@ -69,6 +70,9 @@ function HowItWork() {
                 </div>
 
             </div>
+
+            {/* Brand logos row — part of this section per Figma */}
+            <BrandStrip />
         </section>
     )
 }

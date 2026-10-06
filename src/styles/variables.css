@@ -118,16 +118,19 @@
   /*  BRAND STRIP  */
   --color-brand-logo:  #484848;
   --brand-strip-gap:   96px;
-  
+
 
     /* ANIMATIONS */
   --transition-slow:  0.6s ease;   
   --stagger-delay:    0.12s; 
+
+
+    /* BRAND STRIP  */
+  --brand-logo-height: 40px;   /* Figma: logos are ~40px tall */
 }
 
 
 
-       
 
 
 
