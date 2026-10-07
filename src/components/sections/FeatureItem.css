@@ -1,0 +1,55 @@
+/* FeatureItem.css — one feature row in "Why choose us"
+All values reference tokens from variables.css.  */
+
+/* Row  */
+
+/* Icon on the left, text on the right. */
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-16);
+}
+
+/* Icon tile */
+.feature-item__icon-tile {
+    width: var(--icon-tile-sm);
+    height: var(--icon-tile-sm);
+    background-color: var(--color-primary-light);
+    border-radius: var(--radius-md);
+    /* 12px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Icon inside the tile */
+.feature-item__icon {
+    width: var(--space-24);
+    /* 24px inside a 48px tile */
+    height: var(--space-24);
+    object-fit: contain;
+}
+
+/* Text block  */
+.feature-item__body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+/*  Title */
+.feature-item__title {
+    font-size: var(--fs-md);
+    font-weight: var(--fw-semibold);
+    color: var(--color-text);
+    line-height: 1.2;
+}
+
+/* Description */
+.feature-item__description {
+    font-size: var(--fs-small);
+    font-weight: var(--fw-regular);
+    color: var(--color-text-light);
+    line-height: 1.5;
+}

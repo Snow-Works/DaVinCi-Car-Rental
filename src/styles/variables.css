@@ -127,6 +127,18 @@
 
     /* BRAND STRIP  */
   --brand-logo-height: 40px;   /* Figma: logos are ~40px tall */
+
+
+    /* WHY CHOOSE US SECTION */
+  --icon-tile-sm:        48px;                       /* small feature icon tile */
+  --why-content-width:   576px;                      /* Figma: right column width */
+  --why-features-width:  451px;                      /* Figma: features list width */
+  --color-shape-overlay: rgba(21, 114, 211, 0.10);   /* brand blue at 10% */
+
+  /*  SLIDE-IN ANIMATION */
+  --slide-distance:    200px;   /* how far each column starts off-position */
+  --slide-duration:    0.7s;    /* how long each slide takes */
+  --slide-right-delay: 0.15s;   /* right column waits 150ms after left */
 }
 
 

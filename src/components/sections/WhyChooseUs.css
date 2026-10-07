@@ -1,0 +1,191 @@
+/* WhyChooseUs.css — "Why choose us" section
+   All values reference tokens from variables.css. */
+
+/*  Section wrapper  */
+.why-choose-us {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-white);
+  padding: var(--space-80) var(--space-40);
+}
+
+/* Inner two-column layout */
+.why-choose-us__inner {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: var(--space-40);
+  position: relative;
+}
+
+/* LEFT COLUMN — shape + car */
+.why-choose-us__visual {
+  position: relative;
+  flex: 0 0 45%;
+  height: 500px;
+
+  /* SLIDE-IN: start 200px to the LEFT of final position */
+  opacity: 0;
+  transform: translateX(calc(-1 * var(--slide-distance)));
+  transition:
+    transform var(--slide-duration) ease-out,
+    opacity var(--slide-duration) ease-out;
+}
+
+
+/* Blue chevron shape — behind the car, softly transparent */
+.why-choose-us__shape {
+  position: absolute;
+  top: -80px;
+  /* extend above the car */
+  left: -200px;
+  /* bleed off the left, matching Figma's -181 */
+  width: 140%;
+  /* bigger — it's a large shape per Figma (859px) */
+  height: auto;
+  opacity: 0.10;
+  /* Figma: shape is brand blue at 10% */
+  z-index: 0;
+  pointer-events: none;
+  /* purely decorative */
+}
+
+/* Audi car — bleeds off the left edge via negative margin */
+.why-choose-us__car {
+  position: relative;
+  z-index: 1;
+  width: 160%;
+  /* bigger to match Figma (813px wide) */
+  margin-left: -67%;
+  /* push left edge past the viewport */
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+/* RIGHT COLUMN — content */
+.why-choose-us__content {
+  flex: 1;
+  max-width: var(--why-content-width);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-32);
+
+  /* SLIDE-IN: start 200px to the RIGHT of final position */
+  opacity: 0;
+  transform: translateX(var(--slide-distance));
+  transition:
+    transform var(--slide-duration) ease-out,
+    opacity var(--slide-duration) ease-out,
+    transition-delay var(--slide-right-delay);
+  /* right waits 150ms */
+}
+
+.why-choose-us__heading {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+/* Features list — vertical stack, gap 40 per Figma */
+.why-choose-us__features {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-40);
+  max-width: var(--why-features-width);
+}
+
+
+
+
+/* VISIBLE STATE — triggered by useInView Both columns move to translateX(0) and fade in */
+.why-choose-us--visible .why-choose-us__visual {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.why-choose-us--visible .why-choose-us__content {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+
+/* Icon 1 (the lock) */
+.why-choose-us__features .feature-item:nth-child(1) .feature-item__icon-tile {
+  background: rgba(221, 221, 248, 0.684);
+  width: max-content;
+  padding: 1rem;
+  border-radius: 9px;
+
+
+
+}
+
+.why-choose-us__features .feature-item:nth-child(1) .feature-item__icon-tile:hover {
+  background: rgba(185, 201, 247, 0.948);
+  transition: 0.3s ease-in;
+
+
+}
+
+/* Icon 2 (the user) */
+.why-choose-us__features .feature-item:nth-child(2) .feature-item__icon-tile {
+  background: rgba(221, 221, 248, 0.684);
+  width: max-content;
+  padding: 1rem;
+  border-radius: 9px;
+  cursor: pointer;
+
+
+}
+
+.why-choose-us__features .feature-item:nth-child(2) .feature-item__icon-tile:hover {
+  background: rgba(185, 201, 247, 0.948);
+  transition: 0.3s ease-in;
+
+
+
+}
+
+/* Icon 3 (the delivery box) */
+.why-choose-us__features .feature-item:nth-child(3) .feature-item__icon-tile {
+  background: rgba(221, 221, 248, 0.684);
+  width: max-content;
+  padding: 1rem;
+  border-radius: 9px;
+  cursor: pointer;
+
+
+}
+
+.why-choose-us__features .feature-item:nth-child(3) .feature-item__icon-tile:hover {
+  background: rgba(185, 201, 247, 0.948);
+  transition: 0.3s ease-in;
+
+
+
+}
+
+/* Icon 4 (the headset) */
+.why-choose-us__features .feature-item:nth-child(4) .feature-item__icon-tile {
+  background: rgba(221, 221, 248, 0.684);
+  width: max-content;
+  padding: 1rem;
+  border-radius: 9px;
+  cursor: pointer;
+
+}
+
+
+.why-choose-us__features .feature-item:nth-child(4) .feature-item__icon-tile:hover {
+  background: rgba(185, 201, 247, 0.948);
+  transition: 0.3s ease-in;
+
+
+}
