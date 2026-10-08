@@ -149,6 +149,16 @@
   --card-width:          256px;  
   --card-image-height:   140px;   
   
+
+
+
+    /* DOWNLOAD APP SECTION */
+  --download-section-height: 500px;
+
+  /*  FOOTER  */
+  --color-footer-bg:      #051C34;   /* dark navy footer background */
+  --color-footer-text:    #D6D6D6;   /* light gray links on dark bg */
+  --color-footer-divider: #575757;   /* divider above copyright */
 }
 
 

@@ -1,0 +1,116 @@
+/* Download Rentcars App" section
+All values reference tokens from variables.css.
+ */
+
+/*  Section  */
+.download-app {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-white);
+    min-height: var(--download-section-height);
+    padding: var(--space-80) var(--space-40);
+}
+
+/*  Inner two-column layout  */
+.download-app__inner {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: var(--space-80);
+    position: relative;
+    height: 100%;
+}
+
+/* LEFT COLUMN — content */
+.download-app__content {
+    flex: 1;
+    max-width: 480px;
+    /* Figma: 480 wide */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-24);
+
+    /* Initial state — fade + slide up */
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity var(--transition-slow),
+        transform var(--transition-slow);
+}
+
+.download-app__heading {
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+    color: var(--color-text);
+    line-height: 1.2;
+}
+
+/* "FREE" — brand blue */
+.download-app__heading-accent {
+    color: var(--color-primary);
+}
+
+.download-app__subheading {
+    font-size: var(--fs-body);
+    color: var(--color-text-muted);
+    line-height: 1.5;
+}
+
+/*  Store badges row  */
+.download-app__badges {
+    display: flex;
+    gap: var(--space-16);
+    margin-top: var(--space-8);
+}
+
+.download-app__badge {
+    display: inline-block;
+    transition: transform var(--transition-fast);
+}
+
+.download-app__badge img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+/* Hover: badge lifts slightly */
+.download-app__badge:hover {
+    transform: translateY(-3px);
+}
+
+/* RIGHT COLUMN — phone mockup */
+.download-app__visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Initial state — fade + slide up from further below */
+    opacity: 0;
+    transform: translateY(60px);
+    transition:
+        opacity var(--transition-slow),
+        transform var(--transition-slow);
+}
+
+.download-app__phone {
+    width: 100%;
+    max-width: 420px;
+    /* adjust to match Figma */
+    height: auto;
+    object-fit: contain;
+}
+
+/* VISIBLE STATE — triggered by useInView */
+.download-app--visible .download-app__content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.download-app--visible .download-app__visual {
+    opacity: 1;
+    transform: translateY(0);
+}

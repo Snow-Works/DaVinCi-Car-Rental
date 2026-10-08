@@ -5,6 +5,7 @@ import Pill from './components/common/Pill'
 import HowItWork from './components/sections/HowItWork.jsx'
 import WhyChooseUs from './components/sections/WhyChooseUs'
 import PopularDeals from './components/sections/PopularDeals'
+import DownloadApp from './components/sections/DownloadApp'
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         {/* Next section (how it works, why choose us, etc.) */}
         <WhyChooseUs />
         <PopularDeals />
+        <DownloadApp />
       </main>
     </div>
   )
