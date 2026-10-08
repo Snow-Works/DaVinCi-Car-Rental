@@ -4,6 +4,7 @@ import blob from './assets/hero-blob.png'
 import Pill from './components/common/Pill'
 import HowItWork from './components/sections/HowItWork.jsx'
 import WhyChooseUs from './components/sections/WhyChooseUs'
+import PopularDeals from './components/sections/PopularDeals'
 
 
 function App() {
@@ -15,9 +16,11 @@ function App() {
         <Hero />
         <HowItWork />
         {/* bran strip goes here  */}
-        <WhyChooseUs />
+        
 
         {/* Next section (how it works, why choose us, etc.) */}
+        <WhyChooseUs />
+        <PopularDeals />
       </main>
     </div>
   )

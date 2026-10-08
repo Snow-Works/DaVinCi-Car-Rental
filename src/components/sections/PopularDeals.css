@@ -1,0 +1,94 @@
+/*Car card price card section styling  */
+
+/* Section  */
+.popular-deals {
+  background-color: var(--color-white);
+  padding: var(--space-80) var(--space-40);
+}
+
+/*  Inner container */
+.popular-deals__inner {
+  max-width: var(--container-width);   
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-24);                
+}
+
+/* Heading  */
+.popular-deals__heading {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  color: var(--color-text);
+  text-align: center;
+  line-height: 1.2;
+}
+
+/*  Cards row  */
+/* Four cards side by side, gap 32. Total 4×256 + 3×32 = 1120. */
+.popular-deals__grid {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-32);
+  margin-top: var(--space-40);
+  width: 100%;
+}
+
+/*  Stagger wrapper (per card)  */
+/* The wrapper handles the fade/slide so the CarCard's own hover
+   transform stays independent. */
+.popular-deals__card-slot {
+  opacity: 1;
+  transform: translateY(30px);
+  transition:
+    opacity   var(--transition-slow),
+    transform var(--transition-slow);
+}
+
+.popular-deals__card-slot--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CTA button */
+.popular-deals__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+
+  margin-top: var(--space-40);         
+  padding: var(--space-12) var(--space-24);
+
+  background-color: var(--color-white);
+  color: var(--color-text);
+
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-sm);
+
+  transition:
+    border-color     var(--transition-fast),
+    background-color var(--transition-fast),
+    color            var(--transition-fast);
+}
+
+.popular-deals__cta:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  cursor: pointer;
+  
+}
+
+.popular-deals__cta-icon {
+  width: var(--space-16);
+  height: var(--space-16);
+  transition: transform var(--transition-fast);
+}
+
+.popular-deals__cta:hover .popular-deals__cta-icon {
+  transform: translateX(4px);
+}

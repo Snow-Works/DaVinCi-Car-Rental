@@ -1,0 +1,181 @@
+/* CarCard.css — one car card in the Popular Deals section
+All values reference tokens from variables.css. */
+
+/* Card shell  */
+.car-card {
+  width: var(--card-width);            
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);     
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;                    
+  flex-direction: column;
+
+  /* Hover interactions */
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Hover: lift + deeper shadow */
+.car-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+/*  Car photo  */
+.car-card__image-wrap {
+  width: 100%;
+  height: var(--card-image-height);    
+  overflow: hidden;                    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-16); 
+}           
+
+.car-card__image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.35s ease;
+}
+
+/* Hover: subtle zoom on the car */
+.car-card:hover .car-card__image {
+  transform: scale(1.06);
+}
+
+/* Body */
+.car-card__body {
+  padding: 0 var(--space-20) var(--space-20) var(--space-20);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+/* Title  */
+.car-card__title {
+  font-size: var(--fs-body);           
+  font-weight: var(--fw-semibold);
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+/*  Rating row  */
+.car-card__rating {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.car-card__rating-icon {
+  width: var(--space-16);
+  height: var(--space-16);
+}
+
+.car-card__rating-score {
+  font-size: var(--fs-small);
+  font-weight: var(--fw-semibold);
+  color: var(--color-text);
+}
+
+.car-card__rating-reviews {
+  font-size: var(--fs-tiny);           
+  color: var(--color-text-light);
+}
+
+/*  Specs grid  */
+.car-card__specs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;      
+  gap: var(--space-12) var(--space-16);
+}
+
+.car-card__spec {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.car-card__spec-icon {
+  width: var(--space-16);
+  height: var(--space-16);
+  flex-shrink: 0;
+}
+
+.car-card__spec-label {
+  font-size: var(--fs-tiny);
+  color: var(--color-text-light);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*  Divider  */
+.car-card__divider {
+  border: none;
+  border-top: 1px solid var(--color-divider);
+  margin: var(--space-4) 0;
+}
+
+/*  Price row  */
+.car-card__price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.car-card__price-label {
+  font-size: var(--fs-small);
+  color: var(--color-text-light);
+}
+
+.car-card__price-value {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-4);
+}
+
+.car-card__price-amount {
+  font-size: var(--fs-md);             
+  font-weight: var(--fw-bold);
+  color: var(--color-text);
+}
+
+.car-card__price-unit {
+  font-size: var(--fs-small);
+  color: var(--color-text-light);
+}
+
+/*  Rent Now button */
+.car-card__rent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+
+  width: 100%;
+  padding: var(--space-12) var(--space-16);
+  margin-top: var(--space-4);
+
+  background-color: var(--color-primary);
+  color: var(--color-white);
+
+  font-size: var(--fs-small);
+  font-weight: var(--fw-semibold);
+
+  border-radius: var(--radius-sm);
+
+  transition:
+    background-color var(--transition-fast),
+    transform        var(--transition-fast);
+}
+
+.car-card__rent:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.car-card__rent-icon {
+  width: var(--space-16);
+  height: var(--space-16);
+}

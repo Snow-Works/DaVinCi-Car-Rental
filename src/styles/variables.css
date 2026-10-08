@@ -139,6 +139,16 @@
   --slide-distance:    200px;   /* how far each column starts off-position */
   --slide-duration:    0.7s;    /* how long each slide takes */
   --slide-right-delay: 0.15s;   /* right column waits 150ms after left */
+
+
+
+    /*  POPULAR DEALS SECTION */
+  --space-64:            64px;    
+  --color-star:          #FFC107; 
+  --color-divider:       #E5E5E5; 
+  --card-width:          256px;  
+  --card-image-height:   140px;   
+  
 }
 
 
